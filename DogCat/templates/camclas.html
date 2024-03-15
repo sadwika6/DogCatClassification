@@ -1,0 +1,29 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Image Upload and Camera</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Upload and Camera</h1>
+        <!-- Camera option -->
+        <button id="start-button">Start Camera</button>
+        <br>
+        <!-- Image upload option -->
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" id="file-input" accept="image/*">
+            <button id="upload-button" type="submit">submit</button>
+        </form>
+
+        <button id="capture-button" style="display: none;">Capture</button>
+        <video id="video" autoplay></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <img id="result-image" style="display: none;">
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

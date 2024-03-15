@@ -1,0 +1,51 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+ 
+}
+
+canvas {
+    display: none;
+}
+
+#result-image {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#capture-button {
+    display: none;
+}
